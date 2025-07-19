@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ride Details</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/estilo_nav_logo.css" />
+  <link rel="stylesheet" href="../css/estilos_Ride_Details.css" />
+</head>
+<body>
+
+  <!-- Encabezado principal -->
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="../Img/icono_carros.png" alt="Logo" class="logo">
+      <h1>AVENTONES</h1>
+    </div>
+
+    <nav class="nav-bar">
+      <a href="#">Home</a>
+      <a href="#" class="active">Rides</a>
+      <a href="#">Bookings</a>
+
+      <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <div class="user-menu">
+          <img src="../Img/user_icon.png" alt="User" class="user-icon">
+          <div class="user-dropdown">
+            <a href="#">Logout</a>
+            <a href="#">Settings</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido central -->
+  <main class="ride-details-container">
+    <h2 class="ride-title">Ride Details</h2>
+    <hr class="ride-separator">
+
+    <div class="ride-profile">
+      <img src="../Img/user_icon.png" alt="Usuario" class="profile-img">
+      <p class="username">barroyo</p>
+    </div>
+
+    <form class="ride-form">
+      <div class="route-info">
+        <label>Departure from <span>Quesada</span></label>
+        <label>Arrive To <span>Zarcero</span></label>
+      </div>
+
+      <div class="days-selection">
+        <label for="days">Days</label>
+        <label><input type="checkbox" checked> Mon</label>
+        <label><input type="checkbox" checked> Tue</label>
+        <label><input type="checkbox" checked> Wed</label>
+        <label><input type="checkbox" checked> Thu</label>
+        <label><input type="checkbox" checked> Fri</label>
+        <label><input type="checkbox" checked> Sat</label>
+        <label><input type="checkbox" checked> Sun</label>
+      </div>
+
+      <div class="ride-fields">
+        <label>Time <input type="time" value="10:00"></label>
+        <label>Seats <input type="number" value="2" min="1"></label>
+        <label>Fee <input type="number" value="15" min="0"></label>
+      </div>
+
+      <fieldset class="vehicle-details">
+        <legend>Vehicle Details</legend>
+        <label>Make
+          <select>
+            <option>Nissan</option>
+          </select>
+        </label>
+        <label>Model
+          <select>
+            <option>March</option>
+          </select>
+        </label>
+        <label>Year
+          <select>
+            <option>2020</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <div class="form-actions">
+        <a href="#" class="cancel-link">Cancel</a>
+        <button type="submit" class="request-btn">Request</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Home</a> |
+      <a href="#">Rides</a> |
+      <a href="#">Bookings</a> |
+      <a href="#">Settings</a> |
+      <a href="#">Login</a> |
+      <a href="#">Register</a>
+    </div>
+    <p class="footer-copy">© Aventones.com</p>
+  </footer>
+
+</body>
+</html>
+

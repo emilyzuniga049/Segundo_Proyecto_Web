@@ -1,0 +1,82 @@
+.rides-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.rides-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #666;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.new-ride-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  float: right;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.rides-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.rides-table th,
+.rides-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.rides-table th {
+  background-color: #e6e6e6;
+}
+
+.rides-table a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.rides-table a:hover {
+  text-decoration: underline;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #030303;
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.user-dropdown a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.user-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.user-menu:hover .user-dropdown {
+    display: flex;
+}

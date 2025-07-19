@@ -1,0 +1,134 @@
+.ride-details-container {
+  max-width: 750px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.ride-title {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.ride-separator {
+  width: 60px;
+  margin: 0 auto 30px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.ride-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.username {
+  font-size: 14px;
+  color: #444;
+}
+
+.route-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.route-info label {
+  font-size: 16px;
+  color: #444;
+}
+
+.route-info span {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.days-selection {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.ride-fields {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.ride-fields label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #444;
+}
+
+.vehicle-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.vehicle-details label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 120px;
+  font-size: 14px;
+  color: #444;
+}
+
+.vehicle-details select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel-link {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.request-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+
