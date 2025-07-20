@@ -53,7 +53,6 @@
 
 .accept-link, .reject-link {
   color: #1a0dab;
-  text-decoration: none;
 }
 
 .accept-link:hover, .reject-link:hover {
