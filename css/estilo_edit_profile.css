@@ -70,9 +70,6 @@
   font-size: 14px;
 }
 
-.cancel-link:hover {
-  text-decoration: underline;
-}
 
 .save-btn {
   background-color: var(--primary-color);
