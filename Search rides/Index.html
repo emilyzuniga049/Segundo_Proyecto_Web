@@ -35,34 +35,39 @@
     <h2>Search rides</h2>
 
     <div class="search-box">
-        <div class="input-group">
-            <label for="from">From</label>
-            <select id="from">
+        <div class="search-row">
+            <div class="filters-left">
+            <div class="inline-group">
+                <label for="from">From</label>
+                <select id="from">
                 <option>Quesada</option>
-            </select>
-        </div>
+                </select>
+            </div>
 
-        <div class="input-group">
-            <label for="to">To</label>
-            <select id="to">
+            <div class="inline-group">
+                <label for="to">To</label>
+                <select id="to">
                 <option>Zarcero</option>
-            </select>
+                </select>
+            </div>
+            </div>
+
+            <button class="find-btn">Find rides</button>
         </div>
 
-        <div class="input-group days">
+
+        <div class="days-line">
             <label>Days</label>
             <div class="days-checkboxes">
-                <label><input type="checkbox" checked>Mon</label>
-                <label><input type="checkbox" checked>Tue</label>
-                <label><input type="checkbox" checked>Wed</label>
-                <label><input type="checkbox" checked>Thu</label>
-                <label><input type="checkbox" checked>Fri</label>
-                <label><input type="checkbox" checked>Sat</label>
-                <label><input type="checkbox" checked>Sun</label>
+            <label><input type="checkbox" checked>Mon</label>
+            <label><input type="checkbox" checked>Tue</label>
+            <label><input type="checkbox" checked>Wed</label>
+            <label><input type="checkbox" checked>Thu</label>
+            <label><input type="checkbox" checked>Fri</label>
+            <label><input type="checkbox" checked>Sat</label>
+            <label><input type="checkbox" checked>Sun</label>
             </div>
         </div>
-
-        <button class="find-btn">Find rides</button>
     </div>
 
     <p class="search-result">Rides found from <b>Quesada</b> to <b>Zarcero</b></p>

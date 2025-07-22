@@ -18,51 +18,78 @@
 
 .search-box {
     display: flex;
-    align-items: flex-end;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
     padding: 20px;
     border: 1px solid #ccc;
     margin-bottom: 25px;
 }
 
-.input-group {
+.search-row {
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
 }
 
-.input-group label {
+.filters-left {
+    display: flex;
+    gap: 240px; 
+    align-items: center;
+    margin-left: 50px;
+}
+
+.inline-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.inline-group label {
+    font-size: 15px;
+    color: #333;
     font-weight: bold;
-    margin-bottom: 5px;
+}
+
+.inline-group select {
+    padding: 7px 12px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    min-width: 140px;
+}
+
+.days-line {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-left: 100px;
+}
+
+.days-line label {
+    font-weight: bold;
     font-size: 14px;
     color: #333;
 }
 
-.input-group select {
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.days {
-    flex: 2;
-}
-
 .days-checkboxes {
     display: flex;
+    gap: 50px;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 5px;
+}
+
+.button-container {
+    margin-left: auto; 
 }
 
 .find-btn {
     background-color: #4a90e2;
     color: white;
     border: none;
-    padding: 10px 25px;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 10px 35px;
+    font-size: 15px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -103,12 +130,8 @@
 
 .rides-table a {
     color: #1a0dab;
-    text-decoration: none;
 }
 
-.rides-table a:hover {
-    text-decoration: underline;
-}
 
 .map-container {
     width: 100%;
