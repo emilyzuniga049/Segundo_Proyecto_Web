@@ -37,7 +37,6 @@
 
   <main class="ride-details-container">
     <h2 class="ride-title">Ride Details</h2>
-    <hr class="ride-separator">
 
     <div class="ride-profile">
       <img src="../Img/user_icon.png" alt="Usuario" class="profile-img">
@@ -51,43 +50,57 @@
       </div>
 
       <div class="days-selection">
-        <label for="days">Days</label>
-        <label><input type="checkbox" checked> Mon</label>
-        <label><input type="checkbox" checked> Tue</label>
-        <label><input type="checkbox" checked> Wed</label>
-        <label><input type="checkbox" checked> Thu</label>
-        <label><input type="checkbox" checked> Fri</label>
-        <label><input type="checkbox" checked> Sat</label>
-        <label><input type="checkbox" checked> Sun</label>
+        <label class="days-label">Days</label>
+        <div class="days-checkboxes">
+          <label><input type="checkbox" checked> Mon</label>
+          <label><input type="checkbox" checked> Tue</label>
+          <label><input type="checkbox" checked> Wed</label>
+          <label><input type="checkbox" checked> Thu</label>
+          <label><input type="checkbox" checked> Fri</label>
+          <label><input type="checkbox" checked> Sat</label>
+          <label><input type="checkbox" checked> Sun</label>
+        </div>
       </div>
 
       <div class="ride-fields">
-        <label>Time <input type="time" value="10:00"></label>
-        <label>Seats <input type="number" value="2" min="1"></label>
-        <label>Fee <input type="number" value="15" min="0"></label>
+        <div class="ride-field-inline">
+          <label>Time</label>
+          <input type="time" value="10:00" />
+        </div>
+        <div class="ride-field-inline">
+          <label>Seats</label>
+          <input type="number" value="2" min="1" />
+        </div>
+        <div class="ride-field-inline">
+          <label>Fee</label>
+          <input type="number" value="15" min="0" />
+        </div>
       </div>
 
       <fieldset class="vehicle-details">
         <legend>Vehicle Details</legend>
-        <label>Make
+        <div class="vehicle-field">
+          <label>Make</label>
           <select>
             <option>Nissan</option>
           </select>
-        </label>
-        <label>Model
+        </div>
+        <div class="vehicle-field">
+          <label>Model</label>
           <select>
             <option>March</option>
           </select>
-        </label>
-        <label>Year
+        </div>
+        <div class="vehicle-field">
+          <label>Year</label>
           <select>
             <option>2020</option>
           </select>
-        </label>
+        </div>
       </fieldset>
 
       <div class="form-actions">
-        <a href="#" class="cancel-link">Cancel</a>
+        <a href="../Myrides/Index.html" class="cancel-link">Cancel</a>
         <button type="submit" class="request-btn">Request</button>
       </div>
     </form>
