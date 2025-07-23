@@ -4,123 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventones - Edit Ride</title>
+    <!-- Estilos principales y especificos -->
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/estilo_nav_logo.css">
     <link rel="stylesheet" href="../css/estilos_NewEditRide.css">
 </head>
 <body>
 
-<header class="main-header">
-    <div class="logo-container">
-        <img src="../Img/icono_carros.png" class="logo" alt="Logo">
-        <h1>AVENTONES</h1>
-    </div>
+    <!-- Encabezado con logo y navegación -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="../Img/icono_carros.png" class="logo" alt="Logo">
+            <h1>AVENTONES</h1>
+        </div>
 
-    <nav class="nav-bar">
-        <a href="#">Home</a>
-        <a href="#" class="active">Rides</a>
-        <a href="../Bookings/Index.html">Bookings</a>
-        <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <div class="user-menu">
-                <img src="../Img/user_icon.png" class="user-icon" alt="User Icon" id="user-btn">
-                <div class="user-dropdown" id="dropdown">
-                    <a href="#">Logout</a>
-                    <a href="#">Profile</a>
-                    <a href="#">Configuration</a>
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#" class="active">Rides</a>
+            <a href="../Bookings/Index.html">Bookings</a>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <div class="user-menu">
+                    <img src="../Img/user_icon.png" class="user-icon" alt="User Icon" id="user-btn">
+                    <div class="user-dropdown" id="dropdown">
+                        <a href="../Index.html">Logout</a>
+                        <a href="../Edit Profile/Index.html">Profile</a>
+                        <a href="../Configuration/Index.html">Configuration</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
-<main class="ride-form-container">
-    <h2>Edit Ride</h2>
-    <form class="new-ride-form">
-        <div class="form-row">
-            <div class="form-group">
-                <label for="from">Departure from</label>
-                <input type="text" id="from" placeholder="Quesada">
-            </div>
-            <div class="form-group">
-                <label for="to">Arrive To</label>
-                <input type="text" id="to" placeholder="Zarcero">
-            </div>
-        </div>
-
-      <div class="form-row days-group">
-        <label>Days</label>
-        <div class="days-options">
-            <label><input type="checkbox" checked> Mon</label>
-            <label><input type="checkbox" checked> Tue</label>
-            <label><input type="checkbox" checked> Wed</label>
-            <label><input type="checkbox" checked> Thu</label>
-            <label><input type="checkbox" checked> Fri</label>
-            <label><input type="checkbox" checked> Sat</label>
-            <label><input type="checkbox" checked> Sun</label>
-        </div>
-    </div>
-
-        <div class="form-row">
-            <div class="form-group">
-                <label for="time">Time</label>
-                <select id="time">
-                    <option>10:00 am</option>
-                    <option>11:00 am</option>
-                    <option>12:00 pm</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="seats">Seats</label>
-                <input type="number" id="seats" min="1" max="10" placeholder="2">
-            </div>
-            <div class="form-group">
-                <label for="fee">Fee</label>
-                <input type="number" id="fee" min="0" placeholder="15">
-            </div>
-        </div>
-
-        <fieldset class="vehicle-details">
-            <legend>Vehicle Details</legend>
+    <!-- Formulario principal para editar ride -->
+    <main class="ride-form-container">
+        <h2>Edit Ride</h2>
+        <form class="new-ride-form">
+            <!-- Origen y destino -->
             <div class="form-row">
                 <div class="form-group">
-                    <label for="make">Make</label>
-                    <select id="make">
-                        <option>Nissan</option>
-                        <option>Toyota</option>
-                        <option>Honda</option>
+                    <label for="from">Departure from</label>
+                    <input type="text" id="from" placeholder="Quesada">
+                </div>
+                <div class="form-group">
+                    <label for="to">Arrive To</label>
+                    <input type="text" id="to" placeholder="Zarcero">
+                </div>
+            </div>
+
+            <!-- Selección de días -->
+            <div class="form-row days-group">
+                <label>Days</label>
+                <div class="days-options">
+                    <label><input type="checkbox" checked> Mon</label>
+                    <label><input type="checkbox" checked> Tue</label>
+                    <label><input type="checkbox" checked> Wed</label>
+                    <label><input type="checkbox" checked> Thu</label>
+                    <label><input type="checkbox" checked> Fri</label>
+                    <label><input type="checkbox" checked> Sat</label>
+                    <label><input type="checkbox" checked> Sun</label>
+                </div>
+            </div>
+
+            <!-- Hora, asientos y tarifa -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <select id="time">
+                        <option>10:00 am</option>
+                        <option>11:00 am</option>
+                        <option>12:00 pm</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="model">Model</label>
-                    <input type="text" id="model" placeholder="Pathfinder">
+                    <label for="seats">Seats</label>
+                    <input type="number" id="seats" min="1" max="10" placeholder="2">
                 </div>
                 <div class="form-group">
-                    <label for="year">Year</label>
-                    <input type="number" id="year" placeholder="2015">
+                    <label for="fee">Fee</label>
+                    <input type="number" id="fee" min="0" placeholder="15">
                 </div>
             </div>
-        </fieldset>
 
-        <div class="form-actions">
-            <a href="#" class="cancel-link">Cancel</a>
-            <button type="submit" class="create-btn">Save</button>
+            <!-- Detalles del vehículo -->
+            <fieldset class="vehicle-details">
+                <legend>Vehicle Details</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="make">Make</label>
+                        <select id="make">
+                            <option>Nissan</option>
+                            <option>Toyota</option>
+                            <option>Honda</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Model</label>
+                        <input type="text" id="model" placeholder="Pathfinder">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <input type="number" id="year" placeholder="2015">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Acciones del formulario -->
+            <div class="form-actions">
+                <a href="../Myrides/Index.html" class="cancel-link">Cancel</a>
+                <button type="submit" class="create-btn">Save</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="../Search rides/Index.html">Home</a> |
+            <a href="../Myrides/Index.html">Rides</a> |
+            <a href="../Bookings/Index.html">Bookings</a> |
+            <a href="../Configuration/Index.html">Settings</a> |
+            <a href="../Index.html">Login</a> |
+            <a href="../Register/Index.html">Register</a>
         </div>
-    </form>
-</main>
-
-
-<footer class="footer">
-    <div class="footer-links">
-        <a href="#">Home</a> |
-        <a href="#">Rides</a> |
-        <a href="#">Bookings</a> |
-        <a href="#">Settings</a> |
-        <a href="#">Login</a> |
-        <a href="#">Register</a> 
-    </div>
-    <p class="footer-copy">© Aventones.com</p>
-</footer>
+        <p class="footer-copy">© Aventones.com</p>
+    </footer>
 
 </body>
 </html>
