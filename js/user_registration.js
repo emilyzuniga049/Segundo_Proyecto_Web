@@ -30,15 +30,14 @@ function storeInputs() {
       phone: phone,
       email: email,
       password: password,
+      rol: 'user' 
     }
-
     let users = JSON.parse(localStorage.getItem('users'));
     if (users) {
       users.push(userData);
     } else {
       users = [userData];
     }
-
     localStorage.setItem('users', JSON.stringify(users));
     alert('Registration successful!');
     document.getElementById('register-Form').reset();
