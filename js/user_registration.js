@@ -30,7 +30,7 @@ function storeInputs() {
       phone: phone,
       email: email,
       password: password,
-      rol: 'user' 
+      role: 'user' 
     }
     let users = JSON.parse(localStorage.getItem('users'));
     if (users) {
