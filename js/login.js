@@ -15,9 +15,10 @@ function loginUser() {
   const users = JSON.parse(localStorage.getItem('users')) || [];
 
   // Check if the user exists in localStorage
-  const user = users.find(user => user.email == email & user.password == password);
+  const user = users.find(user => user.email === email && user.password === password);
 
   if (user) {
+    sessionStorage.setItem("currentUser", JSON.stringify(user));
     window.location.href = 'Myrides/index.html';
   } else {
     alert('Invalid email or password. Please try again.');
