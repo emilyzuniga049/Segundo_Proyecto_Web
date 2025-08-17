@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function storeDriverInputs() {
-  const firstName = document.getElementById('first-name').value;
+  const name = document.getElementById('first-name').value;
   const lastName = document.getElementById('last-name').value;
   const idNumber = document.getElementById('id-number').value;
   const birthdate = document.getElementById('birthdate').value;
@@ -21,7 +21,7 @@ function storeDriverInputs() {
   const plate = document.getElementById('license-plate').value;
   if (password == password2) {
     const userData = {
-      firstName: firstName,
+      name: name,
       lastName: lastName,
       idNumber: idNumber,
       birthdate: birthdate,
