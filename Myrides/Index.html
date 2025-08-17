@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/estilo_nav_logo.css">
     <link rel="stylesheet" href="../css/estilo_MyRide.css">
+    <script src="../js/role_hide_Items.js"></script>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
         </div>
         <nav class="nav-bar">
             <a href="../Search rides/Index.html">Home</a>
-            <a href="../Myrides/Index.html" class="active">Rides</a>
+            <a id="nav-myrides" href="../Myrides/Index.html" class="active">Rides</a>
             <a href="../Bookings/Index.html">Bookings</a>
 
             <div class="search-container"> <!-- Barra de búsqueda y menú de usuario -->
@@ -36,7 +37,7 @@
         </nav>
     </header>
 
-    <main class="rides-container">
+    <main class="rides-container" id="page-myrides">
         <h2>My rides</h2>
         <a href="../NewRide/Index.html" class="new-ride-btn">New Ride</a> <!-- Botón para crear un nuevo viaje -->
         <table class="rides-table"> <!-- Tabla para mostrar los viajes -->
