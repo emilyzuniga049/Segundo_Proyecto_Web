@@ -28,4 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
     alert('No tienes permiso para ver "My rides".');
     window.location.href = '../Home/index.html';
   }
+
+  const requestBtn = document.querySelector('.request-btn');
+  if (requestBtn && role === 'driver') {
+    requestBtn.style.display = 'none';
+  }
+
 });
