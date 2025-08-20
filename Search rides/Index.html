@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/estilo_nav_logo.css">
     <link rel="stylesheet" href="../css/estilos_searchrides.css">
     <script src="../js/role_hide_Items.js"></script>
+    <script src="../js/search_rides.js"></script>
 </head>
 <body>
 
@@ -120,7 +121,13 @@
         </table>
 
         <div class="map-container"> <!-- Imagen del mapa -->
-            <img src="../Img/location_imagen.png" alt="Map" class="map-image">
+            <iframe
+                class="map-iframe"
+                src="https://www.google.com/maps?q=Quesada%20Costa%20Rica&z=12&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
