@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const newRequest = {
       id: Date.now(), 
-      userName: currentUser.name,
       userEmail: currentUser.email,
       driverEmail: ride.userEmail,
       rideId: ride.id,
