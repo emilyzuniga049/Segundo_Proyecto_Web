@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" href="../css/estilo_nav_logo.css">
   <link rel="stylesheet" href="../css/estilo_edit_profile.css">
+  <script src="../js/edit_profile_user.js"></script>
+<script src="../js/edit_profile_driver.js"></script>
 </head>
 <body>
   <!-- Encabezado con logo y navegación -->
@@ -25,13 +27,11 @@
         <div class="user-menu">
           <img src="../Img/user_icon.png" alt="User" class="user-icon">
           <div class="user-dropdown">
-            <a href="../Index.html">Logout</a>
-            <a href="../Edit Profile/Index.html">Profile</a>
+            <a href="../Index.html" id="Logout-btn">Logout</a>
             <a href="../Configuration/Index.html">Configuration</a>
           </div>
         </div>
       </div>
-
     </nav>
   </header>
 
@@ -44,40 +44,41 @@
         <div class="form-group">
           <hr>
           <label>First Name</label>
-          <input type="text" placeholder="Bladimir" required>
+          <input id="first-name" type="text"  required>
         </div>
         <div class="form-group">
           <hr>
           <label>Last Name</label>
-          <input type="text" placeholder="Arroyo" required>
+          <input id="last-name" type="text" required>
         </div>
       </div>
 
       <div class="form-group full-width">
         <label>Email</label>
-        <input type="email" placeholder="bladimir.ab@gmail.com" required>
+        <input id="email" type="email"  required readonly>
       </div>
 
       <div class="row">
         <div class="form-group">
           <label>Password</label>
-          <input type="password">
+          <input id="password" type="password">
         </div>
         <div class="form-group">
           <label>Repeat Password</label>
-          <input type="password">
+          <input id="password2" type="password">
         </div>
       </div>
 
       <div class="form-group full-width">
         <label>Address</label>
-        <input type="text" placeholder="2km norte">
+        <input id="address" type="text">
       </div>
 
       <div class="row">
         <div class="form-group">
           <label>Country</label>
-          <select>
+          <select id="country">
+            <option value="">--</option>
             <option>Costa Rica</option>
             <option>Panamá</option>
             <option>Nicaragua</option>
@@ -85,18 +86,38 @@
         </div>
         <div class="form-group">
           <label>State</label>
-          <input type="text" placeholder="Alajuela">
+          <input id="state" type="text">
         </div>
       </div>
 
       <div class="row">
         <div class="form-group">
           <label>City</label>
-          <input type="text" placeholder="Quesada">
+          <input id="city" type="text">
         </div>
         <div class="form-group">
           <label>Phone Number</label>
-          <input type="text">
+          <input id="phone" type="text">
+        </div>
+      </div>
+      <div class="row" id="vehicle-info">
+        <div class="form-group">
+          <label>Vehicle make</label>
+          <input id="vehicle-make" type="text">
+        </div>
+        <div class="form-group">
+          <label>Vehicle model</label>
+          <input id="vehicle-model" type="text">
+        </div>
+      </div>
+      <div class="row" id="vehicle-info2">
+        <div class="form-group">
+          <label>Vehicle year</label>
+          <input id="vehicle-year" type="text">
+        </div>
+        <div class="form-group">
+          <label>License plate</label>
+          <input id="license-plate" type="text">
         </div>
       </div>
 
