@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/estilo_nav_logo.css">
     <link rel="stylesheet" href="../css/estilos_configuration.css">
+    <script src="../js/configuration.js"></script>
 </head>
 <body>
 
@@ -26,7 +27,7 @@
                     <img src="../Img/user_icon.png" alt="User" class="user-icon">
                     <div class="user-dropdown">
                         <a href="../Edit Profile/Index.html">Profile</a>
-                        <a href="../Index.html">Logout</a>
+                        <a href="../Index.html" id="Logout-btn">Logout</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +40,7 @@
         <form class="configuration-form">
             <!-- Campo para el nombre  -->
             <label for="public-name">Public Name</label>
-            <input type="text" id="public-name" name="public-name" placeholder="Bladimir">
+            <input type="text" id="public-name" name="public-name" readonly>
 
             <!-- Campo para la biografía  -->
             <label for="public-bio">Public Bio</label>
@@ -47,7 +48,7 @@
 
             <!-- Accciones para cancelar o guardar -->
             <div class="button-group">
-                <a href="#" class="cancel-btn">Cancel</a>
+                <a href="../Search rides/Index.html" class="cancel-btn">Cancel</a>
                 <button type="submit" class="save-btn">Save</button>
             </div>
         </form>
