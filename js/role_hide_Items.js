@@ -7,14 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // Normaliza rol: 'user' (pasajero), 'driver' (conductor), 'admin'
   const role = (currentUser.role || 'user').toLowerCase();
 
-  // Ocultar el item del navbar "Rides" para usuarios sin permiso
+
   const navMyRides = document.getElementById('nav-myrides');
   if (navMyRides && role === 'user') {
     navMyRides.classList.add('hidden');
-    // Si estás actualmente en MyRides y no debes verlo, redirige
+    // redirige
     if (location.pathname.toLowerCase().includes('/myrides/')) {
       window.location.href = '../Search rides/index.html';
       return;
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const pageMyRides = document.getElementById('page-myrides');
   if (pageMyRides && role === 'user') {
     pageMyRides.classList.add('hidden');
-    // (opcional) muestra un aviso
     alert('No tienes permiso para ver "My rides".');
     window.location.href = '../Home/index.html';
   }
@@ -32,6 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const requestBtn = document.querySelector('.request-btn');
   if (requestBtn && role === 'driver') {
     requestBtn.style.display = 'none';
+  }
+
+  const logoutBtn = document.getElementById('Logout-btn');
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      sessionStorage.removeItem('currentUser'); 
+      window.location.href = '../Index.html';   
+    });
   }
 
 });
