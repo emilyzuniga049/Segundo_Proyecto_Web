@@ -80,3 +80,73 @@
 .user-menu:hover .user-dropdown {
     display: flex;
 }
+
+@media (max-width: 430px) {
+  .rides-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .rides-container h2 {
+    font-size: 22px;
+  }
+
+  .new-ride-btn {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 20px 0;
+  }
+
+  .rides-table {
+    font-size: 12px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .rides-table th,
+  .rides-table td {
+    padding: 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  .rides-container {
+    max-width: 95%;
+    padding: 25px;
+  }
+
+  .rides-container h2 {
+    font-size: 26px;
+  }
+
+  .rides-table {
+    font-size: 13px;
+  }
+
+  .new-ride-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .rides-container {
+    max-width: 1200px;
+  }
+
+  .rides-container h2 {
+    font-size: 32px;
+  }
+
+  .rides-table {
+    font-size: 15px;
+  }
+
+  .new-ride-btn {
+    font-size: 16px;
+    padding: 12px 28px;
+  }
+}
