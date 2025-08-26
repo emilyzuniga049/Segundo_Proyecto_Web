@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Search Rides - Aventones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Estilos generales y específicos -->
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/estilo_nav_logo.css">
+    <link rel="stylesheet" href="../css/layout_base.css">
     <link rel="stylesheet" href="../css/estilos_searchrides.css">
     <script src="../js/role_hide_Items.js"></script>
     <script src="../js/search_rides.js"></script>
@@ -29,7 +31,7 @@
                     <div class="user-dropdown">
                         <a href="../Configuration/Index.html">Settings</a>
                         <a href="../Edit Profile/Index.html">Profile</a>
-                        <a href="../Index.html">Logout</a>
+                        <a href="../Index.html" id="Logout-btn">Logout</a>
                     </div>
                 </div>
             </div>
@@ -77,48 +79,50 @@
 
         <p class="search-result">Rides found from <b>Quesada</b> to <b>Zarcero</b></p>  <!-- Mensaje de resultados encontrados -->
 
-        <table class="rides-table"> <!-- Tabla de resultados -->
-            <thead>
-                <tr>
-                    <th>Driver</th>
-                    <th>From</th>
-                    <th>To</th>
-                    <th>Seats</th>
-                    <th>Car</th>
-                    <th>Fee</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody> 
-                <tr> 
-                    <td><img src="../Img/user_icon.png" class="small-icon " alt="User"> barroyo</td> 
-                    <td><a href="../RideDetails/Index.html">Quesada</a></td>
-                    <td>Alajuela</td>
-                    <td>2</td> 
-                    <td>Nissan Pathfinder 2015</td>
-                    <td>$5</td>
-                    <td><a href="#">Request</a></td>
-                </tr>
-                <tr>
-                    <td><img src="../Img/user_icon.png" class="small-icon" alt="User"> barroyo</td>
-                    <td><a href="#">Quesada</a></td>
-                    <td>Naranjo</td>
-                    <td>1</td>
-                    <td>Toyota Corolla 2020</td>
-                    <td>$10</td>
-                    <td><a href="#">Request</a></td>
-                </tr>
-                <tr>
-                    <td><img src="../Img/user_icon.png" class="small-icon" alt="User"> yluna</td>
-                    <td><a href="#">Aguas Zarcas</a></td>
-                    <td>Naranjo</td>
-                    <td>1</td>
-                    <td>Ford Festiva 1990</td>
-                    <td>--</td>
-                    <td><a href="#">Request</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrap">
+            <table class="rides-table"> <!-- Tabla de resultados -->
+                <thead>
+                    <tr>
+                        <th>Driver</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Seats</th>
+                        <th>Car</th>
+                        <th>Fee</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr> 
+                        <td><img src="../Img/user_icon.png" class="small-icon " alt="User"> barroyo</td> 
+                        <td><a href="../RideDetails/Index.html">Quesada</a></td>
+                        <td>Alajuela</td>
+                        <td>2</td> 
+                        <td>Nissan Pathfinder 2015</td>
+                        <td>$5</td>
+                        <td><a href="#">Request</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Img/user_icon.png" class="small-icon" alt="User"> barroyo</td>
+                        <td><a href="#">Quesada</a></td>
+                        <td>Naranjo</td>
+                        <td>1</td>
+                        <td>Toyota Corolla 2020</td>
+                        <td>$10</td>
+                        <td><a href="#">Request</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../Img/user_icon.png" class="small-icon" alt="User"> yluna</td>
+                        <td><a href="#">Aguas Zarcas</a></td>
+                        <td>Naranjo</td>
+                        <td>1</td>
+                        <td>Ford Festiva 1990</td>
+                        <td>--</td>
+                        <td><a href="#">Request</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="map-container"> <!-- Imagen del mapa -->
             <iframe
