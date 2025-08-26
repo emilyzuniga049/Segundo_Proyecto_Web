@@ -1,5 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+  const userMenu = document.querySelector('.user-menu');
+  if (userMenu){
+    const icon = userMenu.querySelector('.user-icon');
+    const dropdown = userMenu.querySelector('.user-dropdown');
+    if (icon && dropdown){
+      icon.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropdown.style.display = (dropdown.style.display === 'flex' ? 'none' : 'flex');
+        dropdown.style.flexDirection = 'column';
+      });
+      document.addEventListener('click', (e) => {
+        if (!userMenu.contains(e.target)) dropdown.style.display = 'none';
+      });
+    }
+  }
 
   // Si no hay sesión, manda al login
   if (!currentUser) {
